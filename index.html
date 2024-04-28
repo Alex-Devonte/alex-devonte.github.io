@@ -1,13 +1,80 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="output.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl  font-bold underline">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav></nav>
+    <div class="p-5">
+      <header class="flex flex-col items-center">
+        <h1 class="mb-5 text-8xl">Alex Taylor</h1>
+        <h2 class="mb-5 text-6xl">Web Developer</h2>
+        <div class="my-5 flex gap-10">
+          <!-- <a href="">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+              alt="LinkedIn Logo"
+              title="LinkedIn"
+              class="social-icon"
+            />
+          </a>
+          <a href="">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+              alt="Github Logo"
+              title="Github"
+              class="social-icon"
+            />
+          </a> -->
+        </div>
+      </header>
+      <section class="">
+        <!--Projects Section-->
+        <div class="">
+          <h2 class="mb-2 text-5xl">Projects</h2>
+          <span class="hidden text-lg md:inline">(Hover to learn more)</span>
+          <span class="text-lg md:hidden">(Click to learn more)</span>
+        </div>
+
+        <div class="grid grid-cols-1 gap-3 lg:grid-cols-3">
+          <div class="border-8 border-indigo-500 p-4">
+            <h3 class="mb-5 text-4xl">Project Title</h3>
+            <div class="relative">
+              <img src="odinbook.png" class="w-full" />
+              <div
+                class="absolute inset-0 bg-black p-5 text-white opacity-0 hover:opacity-90"
+              >
+                Project Description
+                <div class="flex gap-5 p-5">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                    class="tech-icon"
+                  />
+
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                    class="tech-icon"
+                  />
+                </div>
+                <a href="">Live site</a>
+                <a href="">Github</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-4xl">Project Title</h3>
+          </div>
+          <div>
+            <h3 class="text-4xl">Project Title</h3>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--End Container-->
+    <footer class="fixed bottom-0">
+      Designed and developed by Alex Taylor 2024
+    </footer>
+  </body>
 </html>
