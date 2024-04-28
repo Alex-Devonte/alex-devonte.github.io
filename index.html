@@ -3,16 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/05ffcb9c52.js"
+      crossorigin="anonymous"
+    ></script>
     <link href="output.css" rel="stylesheet" />
   </head>
   <body>
     <nav></nav>
-    <div class="p-5">
-      <header class="flex flex-col items-center">
-        <h1 class="mb-5 text-8xl">Alex Taylor</h1>
-        <h2 class="mb-5 text-6xl">Web Developer</h2>
-        <div class="my-5 flex gap-10">
-          <!-- <a href="">
+    <div class="min-h-full p-3">
+      <header class="flex h-screen flex-col justify-center">
+        <div class="flex flex-grow flex-col justify-center">
+          <h1 class="mb-5 text-6xl font-bold md:text-8xl">Alex Taylor</h1>
+          <h2 class="mb-5 text-4xl font-semibold md:text-6xl">Web Developer</h2>
+        </div>
+        <div class="flex justify-center">
+          <a href="#projects" class="m-12">
+            <i class="fa-solid fa-angle-down fa-fade fa-2x"></i>
+          </a>
+        </div>
+      </header>
+
+      <!-- <div class="my-5 flex gap-10">
+          <a href="">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
               alt="LinkedIn Logo"
@@ -27,53 +40,119 @@
               title="Github"
               class="social-icon"
             />
-          </a> -->
-        </div>
-      </header>
-      <section class="">
-        <!--Projects Section-->
-        <div class="">
-          <h2 class="mb-2 text-5xl">Projects</h2>
+          </a>
+        </div> -->
+
+      <!--Projects Section-->
+      <section id="projects" class="">
+        <div class="mb-2">
+          <h2 class="mb-2 text-4xl font-bold md:text-6xl">Projects</h2>
           <span class="hidden text-lg md:inline">(Hover to learn more)</span>
           <span class="text-lg md:hidden">(Click to learn more)</span>
         </div>
 
+        <!--Projects wrapper-->
         <div class="grid grid-cols-1 gap-3 lg:grid-cols-3">
-          <div class="border-8 border-indigo-500 p-4">
-            <h3 class="mb-5 text-4xl">Project Title</h3>
+          <!--Project-->
+          <div class="p-1">
+            <h3 class="mb-5 text-3xl">Odin Book</h3>
             <div class="relative">
-              <img src="odinbook.png" class="w-full" />
+              <img src="odinbook.png" class="h-full w-full" />
               <div
-                class="absolute inset-0 bg-black p-5 text-white opacity-0 hover:opacity-90"
+                class="absolute inset-0 flex flex-col justify-between gap-2 overflow-y-scroll bg-black p-5 text-white opacity-0 hover:opacity-90 sm:justify-evenly sm:text-lg"
               >
-                Project Description
-                <div class="flex gap-5 p-5">
+                <div class="mb-3">
+                  <p>
+                    OdinBook is a social media clone made with React, Node, and
+                    MongoDB. Users can create, comment, and like posts as well
+                    as follow other users.
+                  </p>
+                </div>
+                <div class="mb-3 flex flex-wrap gap-5 p-2">
                   <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                    alt="HTML5 Logo"
                     class="tech-icon"
                   />
 
                   <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                    alt="CSS3 Logo"
+                    class="tech-icon"
+                  />
+
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                    alt="TailwindCSS Logo"
+                    class="tech-icon"
+                  />
+
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                    alt="JavaScript Logo"
+                    class="tech-icon"
+                  />
+
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                    alt="React Logo"
+                    class="tech-icon"
+                  />
+
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg"
+                    alt="Redux Logo"
+                    class="tech-icon"
+                  />
+
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                    alt="NodeJS Logo"
+                    class="tech-icon"
+                  />
+
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg"
+                    alt="Mongoose Logo"
+                    class="tech-icon"
+                  />
+
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                    alt="MongoDB Logo"
+                    class="tech-icon"
+                  />
+
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+                    alt="AWS Logo"
                     class="tech-icon"
                   />
                 </div>
-                <a href="">Live site</a>
-                <a href="">Github</a>
+                <div class="flex gap-5">
+                  <a
+                    href="https://theodinbook.adaptable.app/"
+                    target="_blank"
+                    class="text-md rounded-sm border-2 border-white bg-black p-2 text-white hover:bg-white hover:text-black"
+                    >Live site</a
+                  >
+                  <a
+                    href="https://github.com/Alex-Devonte/OdinBook"
+                    target="_blank"
+                    class="text-md rounded-sm border-2 border-white bg-black p-2 text-white hover:bg-white hover:text-black"
+                    >Github</a
+                  >
+                </div>
               </div>
             </div>
           </div>
-          <div>
-            <h3 class="text-4xl">Project Title</h3>
-          </div>
-          <div>
-            <h3 class="text-4xl">Project Title</h3>
-          </div>
+          <!--End Project-->
         </div>
+        <!--End Project Wrapper-->
       </section>
     </div>
-    <!--End Container-->
-    <footer class="fixed bottom-0">
+    <!--End Page Wrapper-->
+    <footer class="bg-black p-5 text-center text-white">
       Designed and developed by Alex Taylor 2024
     </footer>
   </body>
