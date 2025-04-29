@@ -95,8 +95,26 @@
   font-size: 30px;
 }
 
-
 main {
   height: 100vh;
   padding: 20px;
 }
+
+.section-title {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.tools-container {
+  align-items: center;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  text-align: center;
+}
+
+.tool {
+  padding: 5px;
+}
+
