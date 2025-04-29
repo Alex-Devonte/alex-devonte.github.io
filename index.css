@@ -2,3 +2,101 @@
   margin: 0;
   padding: 0;
 }
+
+.icon {
+  height: 32px;
+  width: 32px;
+}
+
+  header {
+    display: flex;
+    flex-direction: column ;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#nav-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.theme-toggle,
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 10px 25px 0 0;
+  padding: 8px 0px;
+}
+
+.toggle-icon {
+  height: 40px;
+  width: 40px;
+}
+
+.menu-active {
+  z-index: 3;
+}
+
+.bar {
+  stroke-width: 3px;
+  stroke-linecap: round;
+}
+
+#menu {
+  display: none;
+  font-size: 29px;
+}
+
+#menu.menu-open {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: pink;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.navigation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style-type: none;
+}
+
+.navigation-list li a {
+  color: #000;
+  text-decoration: none;
+}
+
+#header-intro {
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+}
+
+.angle-down-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.fa-angle-down {
+  font-size: 30px;
+}
+
+
+main {
+  height: 100vh;
+  padding: 20px;
+}
