@@ -8,33 +8,71 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ul class="menu">
-          <li><a href="#tools">Tools</a></li>
-          <li><a href="#projects">Projects</a></li>
-        </ul>
-      </nav>
-      <div>
+        <div id="nav-wrapper">
+        <button class="theme-toggle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="100"
+            height="100"
+            viewBox="0 0 50 50"
+            class="toggle-icon sun-icon icon"
+          >
+            <path
+              d="M 24.984375 3.9863281 A 1.0001 1.0001 0 0 0 24 5 L 24 11 A 1.0001 1.0001 0 1 0 26 11 L 26 5 A 1.0001 1.0001 0 0 0 24.984375 3.9863281 z M 10.847656 9.8476562 A 1.0001 1.0001 0 0 0 10.150391 11.564453 L 14.394531 15.808594 A 1.0001 1.0001 0 1 0 15.808594 14.394531 L 11.564453 10.150391 A 1.0001 1.0001 0 0 0 10.847656 9.8476562 z M 39.123047 9.8476562 A 1.0001 1.0001 0 0 0 38.435547 10.150391 L 34.191406 14.394531 A 1.0001 1.0001 0 1 0 35.605469 15.808594 L 39.849609 11.564453 A 1.0001 1.0001 0 0 0 39.123047 9.8476562 z M 25 15 A 1.0001 1.0001 0 0 0 24.589844 15.083984 C 19.284905 15.312748 15 19.640816 15 25 C 15 30.505414 19.495611 35 25 35 C 30.50528 35 35 30.50528 35 25 C 35 19.642276 30.717945 15.314763 25.414062 15.083984 A 1.0001 1.0001 0 0 0 25 15 z M 25 17 C 29.420586 17 33 20.580389 33 25 C 33 29.42072 29.42072 33 25 33 C 20.580389 33 17 29.420586 17 25 C 17 20.580523 20.580523 17 25 17 z M 5 24 A 1.0001 1.0001 0 1 0 5 26 L 11 26 A 1.0001 1.0001 0 1 0 11 24 L 5 24 z M 39 24 A 1.0001 1.0001 0 1 0 39 26 L 45 26 A 1.0001 1.0001 0 1 0 45 24 L 39 24 z M 15.082031 33.890625 A 1.0001 1.0001 0 0 0 14.394531 34.193359 L 10.150391 38.435547 A 1.0001 1.0001 0 1 0 11.564453 39.849609 L 15.808594 35.607422 A 1.0001 1.0001 0 0 0 15.082031 33.890625 z M 34.888672 33.890625 A 1.0001 1.0001 0 0 0 34.191406 35.607422 L 38.435547 39.849609 A 1.0001 1.0001 0 1 0 39.849609 38.435547 L 35.605469 34.193359 A 1.0001 1.0001 0 0 0 34.888672 33.890625 z M 24.984375 37.986328 A 1.0001 1.0001 0 0 0 24 39 L 24 45 A 1.0001 1.0001 0 1 0 26 45 L 26 39 A 1.0001 1.0001 0 0 0 24.984375 37.986328 z"
+            ></path>
+          </svg>
+        </button>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="800px" width="800px" version="1.1" id="Capa_1" viewBox="0 0 47.539 47.539" xml:space="preserve" class=" toggle-icon icon moon-icon">
+                                  <g>
+                                    <g>
+                                      <path style="fill:#010002;" d="M24.997,47.511C11.214,47.511,0,36.298,0,22.515C0,12.969,5.314,4.392,13.869,0.132    c0.385-0.191,0.848-0.117,1.151,0.186s0.381,0.766,0.192,1.15C13.651,4.64,12.86,8.05,12.86,11.601    c0,12.681,10.316,22.997,22.997,22.997c3.59,0,7.033-0.809,10.236-2.403c0.386-0.191,0.848-0.117,1.151,0.186    c0.304,0.303,0.381,0.766,0.192,1.15C43.196,42.153,34.597,47.511,24.997,47.511z M12.248,3.372C5.862,7.608,2,14.709,2,22.515    c0,12.68,10.316,22.996,22.997,22.996c7.854,0,14.981-3.898,19.207-10.343c-2.668,0.95-5.464,1.43-8.346,1.43    c-13.783,0-24.997-11.214-24.997-24.997C10.861,8.761,11.327,6.005,12.248,3.372z"/>
+                                    </g>
+                                  </g>
+                                  </svg> -->
+        <button class="menu-toggle" aria-expanded="false" aria-controls="menu" aria-label="Toggle Menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            class="icon menu-icon"
+          >
+            <path class="bar top-bar" d="M3 5 H21"></path>
+            <path class="bar middle-bar" d="M3 12 H21"></path>
+            <path class="bar bottom-bar" d="M3 19 H21"></path>
+          </svg>
+        </button>
+        <nav id="menu">
+          <ul class="navigation-list">
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="header-intro">
         <h1>Alex Taylor</h1>
-        <h2>Web Developer</h2>
+        <p>A Web Developer with a passion for creating meaningful experiences on the web.</p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/alex-taylor911/" target="_blank" class="social-link">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+              alt="LinkedIn Logo"
+              class="icon social-icon"
+            />
+          </a>
+          <a href="https://github.com/Alex-Devonte/" target="_blank" class="social-link">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+              alt="GitHub Logo"
+              class="icon social-icon"
+            />
+          </a>
+        </div>
       </div>
-      <div class="socials">
-        <a href="https://www.linkedin.com/in/alex-taylor911/" target="_blank" class="social-link">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
-            alt="LinkedIn Logo"
-            class="icon social-icon"
-          />
-        </a>
-        <a href="https://github.com/Alex-Devonte/" target="_blank" class="social-link">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-            alt="GitHub Logo"
-            class="icon social-icon"
-          />
-        </a>
-      </div>
-      <i class="fa-solid fa-angle-down icon"></i>
+
+      <div class="angle-down-container"><i class="fa-solid fa-angle-down icon"></i></div>
     </header>
     <main>
       <section id="tools"></section>
@@ -158,5 +196,6 @@
     </main>
 
     <footer>Designed and developed by Alex Taylor 2025</footer>
+    <script src="script.js"></script>
   </body>
 </html>
