@@ -118,3 +118,69 @@ main {
   padding: 5px;
 }
 
+.section-subtitle {
+  grid-column: 1 / -1;
+  padding: 10px 0;
+}
+
+#fullstack-projects, #frontend-projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.project {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.thumbnail-container {
+  height: 100%;
+  width: 100%;
+}
+
+.project-thumbnail {
+  height: 100%;
+  width: 100%;
+}
+
+.project-details-container {
+  border-radius: 5px;
+  display: none;
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  padding: 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.project:hover .project-details-container {
+  display: flex;
+}
+
+.project-title {
+  margin: 15px 0;
+}
+
+.project-tools {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style-type: none;
+}
+
+.project-links {
+  display: flex;
+  gap: 20px;
+}
