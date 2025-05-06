@@ -119,7 +119,7 @@ main {
   align-items: center;
   display: grid;
   gap: 25px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   justify-items: center;
   text-align: center;
 }
@@ -201,4 +201,14 @@ footer {
   color: #fff;
   padding: 10px;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+
+  .tools-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #fullstack-projects, #frontend-projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
