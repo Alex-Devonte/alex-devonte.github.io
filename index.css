@@ -204,11 +204,16 @@ footer {
 }
 
 @media (min-width: 768px) {
-
   .tools-container {
     grid-template-columns: repeat(3, 1fr);
   }
   #fullstack-projects, #frontend-projects {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  #fullstack-projects, #frontend-projects {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
