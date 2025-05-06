@@ -21,13 +21,17 @@ body {
     display: flex;
     flex-direction: column ;
     height: 100vh;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px;
 }
 
 #nav-wrapper {
   display: flex;
   justify-content: flex-end;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 2;
 }
 
 .theme-toggle,
@@ -35,7 +39,8 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  margin-left: 30px
+  margin-left: 30px;
+  z-index: 3;
 }
 
 .toggle-icon {
@@ -63,7 +68,7 @@ body {
   justify-content: center;
   background-color: pink;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
@@ -97,7 +102,10 @@ body {
 .angle-down-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  left: 0;
+  margin: 90vh 0 100px 0;
+  position: absolute;
+  right: 0;
 }
 
 .fa-angle-down {
