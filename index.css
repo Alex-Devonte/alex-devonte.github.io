@@ -17,12 +17,12 @@ body {
   width: 32px;
 }
 
-  header {
-    display: flex;
-    flex-direction: column ;
-    height: 100vh;
-    justify-content: center;
-    padding: 20px;
+header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  padding: 20px;
 }
 
 #nav-wrapper {
@@ -118,8 +118,12 @@ main {
   padding: 20px;
 }
 
+section {
+  margin-bottom: 100px;
+}
+
 .section-title {
-  padding: 20px 0;
+  padding: 25px 0;
   text-align: center;
 }
 
@@ -132,6 +136,11 @@ main {
   text-align: center;
 }
 
+.tool-icon {
+  height: 48px;
+  width: 48px;
+}
+
 .tool {
   padding: 5px;
 }
@@ -141,7 +150,8 @@ main {
   padding: 10px 0;
 }
 
-#fullstack-projects, #frontend-projects {
+#fullstack-projects,
+#frontend-projects {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -169,7 +179,7 @@ main {
   height: 100%;
   left: 0;
   overflow: auto;
-  position: absolute; 
+  position: absolute;
   right: 0;
   top: 0;
 }
@@ -225,24 +235,35 @@ footer {
 
 @media (min-width: 768px) {
   .tools-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
-  #fullstack-projects, #frontend-projects {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .project-tools li {
-    padding: 5px;;
-  }
-}
-
-@media (min-width: 992px) {
-  #fullstack-projects, #frontend-projects {
-    grid-template-columns: repeat(3, 1fr);
+  .tool-icon {
+    height: 64px;
+    width: 64px;
   }
 
   .project-tools li {
     padding: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .tools-container {
+    gap: 5px;
+    grid-template-columns: repeat(6, 1fr);
+    justify-self: center;
+    width: 50%;
+  }
+
+.tool-icon {
+     height: 80px;
+      width: 80px;
+}
+  #fullstack-projects,
+  #frontend-projects {
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+    width: 90%;
   }
 }
