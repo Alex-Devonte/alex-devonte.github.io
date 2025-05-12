@@ -265,7 +265,7 @@ footer {
   #frontend-projects {
     grid-template-columns: repeat(3, 1fr);
     justify-self: center;
-    width: 90%;
+    width: 100%;
   }
 }
 
