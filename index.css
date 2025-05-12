@@ -253,16 +253,29 @@ footer {
     gap: 5px;
     grid-template-columns: repeat(6, 1fr);
     justify-self: center;
-    width: 50%;
+    width: 60%;
   }
 
-.tool-icon {
-     height: 80px;
-      width: 80px;
-}
+  .tool-icon {
+    height: 80px;
+    width: 80px;
+  }
+  
   #fullstack-projects,
   #frontend-projects {
     grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+    width: 90%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .tools-container {
+    width: 50%;
+  }
+
+  #fullstack-projects,
+  #frontend-projects {
     justify-self: center;
     width: 90%;
   }
