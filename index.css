@@ -139,6 +139,7 @@ section {
 }
 
 .section-title {
+  font-size: 30px;
   padding: 25px 0;
   text-align: center;
 }
@@ -162,6 +163,7 @@ section {
 }
 
 .section-subtitle {
+  font-size: 20px;
   grid-column: 1 / -1;
   padding: 10px 0;
 }
@@ -267,6 +269,14 @@ footer {
   .project-tools li {
     padding: 10px;
   }
+
+  .section-title {
+    font-size: 35px;
+  }
+
+  .section-subtitle {
+    font-size: 25px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -275,7 +285,7 @@ footer {
   }
 
   #header-intro p {
-    font-size: 30px;
+    font-size: 35px;
   }
   
   .tools-container {
@@ -295,6 +305,14 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     justify-self: center;
     width: 100%;
+  }
+
+  .section-title {
+    font-size: 40px;
+  }
+
+  .section-subtitle {
+    font-size: 30px;
   }
 }
 
