@@ -5,6 +5,7 @@
 
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -88,15 +89,29 @@ header {
 }
 
 #header-intro {
-  align-items: start;
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  text-align: center;
+}
+
+#header-intro h1 {
+  font-size: 70px;
+}
+
+#header-intro p {
+  font-size: 20px;
 }
 
 .socials {
   display: flex;
-  gap: 20px;
+  gap: 35px;
+}
+
+.social-icon {
+  height: 40px;
+  width: 40px;
 }
 
 .angle-down-container {
@@ -235,6 +250,11 @@ footer {
 }
 
 @media (min-width: 768px) {
+  .social-icon {
+    height: 58px;
+    width: 58px;
+  }
+
   .tools-container {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -250,6 +270,14 @@ footer {
 }
 
 @media (min-width: 992px) {
+  #header-intro h1 {
+    font-size: 100px;
+  }
+
+  #header-intro p {
+    font-size: 30px;
+  }
+  
   .tools-container {
     gap: 5px;
     grid-template-columns: repeat(6, 1fr);
