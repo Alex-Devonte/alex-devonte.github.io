@@ -60,7 +60,7 @@ header {
 
 #menu {
   display: none;
-  font-size: 29px;
+  font-size: 30px;
 }
 
 #menu.menu-open {
@@ -79,7 +79,7 @@ header {
 .navigation-list {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 25px;
   list-style-type: none;
 }
 
