@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector(".menu-toggle");
   const nav = document.querySelector("#menu");
 
+  const themeToggle = document.querySelector(".theme-toggle");
+
   function toggleMenu() {
     const isMenuOpen = menuToggle.getAttribute("aria-expanded") === "true";
 
@@ -9,6 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
     menuToggle.setAttribute("aria-expanded", !isMenuOpen);
     menuToggle.setAttribute("aria-label", isMenuOpen ? "Open menu" : "Close menu");
     menuToggle.classList.toggle("menu-active", !isMenuOpen);
+  }
+
+  function toggleTheme() {
+    const isDarkMode = document.body.classList.toggle("dark-mode");
+    themeToggle.setAttribute("aria-label", isDarkMode ? "Switch to light mode" : "Switch to dark mode");
   }
 
   document.querySelectorAll("#menu a").forEach((link) => {
@@ -20,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
       menuToggle.classList.remove("menu-active");
     });
   });
-  
+
   menuToggle.addEventListener("click", toggleMenu);
+  themeToggle.addEventListener("click", toggleTheme);
 });
