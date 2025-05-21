@@ -1,3 +1,11 @@
+:root {
+  --color-primary: #5299D3;
+  --color-secondary: #A2BCE0;
+  --color-text: #5E5C6C;
+  --color-light: #F5F5F5;
+  --color-dark: #121212;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,20 +16,61 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Dark mode */
+body.dark-mode {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.dark-mode .sun-icon {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dark-mode .moon-icon {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+body.dark-mode .menu-icon {
+  color: var(--color-light);
+}
+
+body.dark-mode .menu-icon:hover {
+  color: var(--color-secondary);
+}
+
+body.dark-mode #menu {
+  background-color: var(--color-text);
+}
+
+body.dark-mode .navigation-list li a:hover {
+  color: var(--color-secondary) ;
+}
+
+body.dark-mode .github-icon {
+  filter: invert(1);
+}
+
+body.dark-mode .section-subtitle {
+  color: var(--color-light);
+}
+
+/* Light mode (default) */
 body {
+  color: var(--color-text);
   display: flex;
   flex-direction: column;
   font-family: Karla, sans-serif;
 }
 
-body.dark-mode {
-  background-color: #121212;
-  color: #f5f5f5;
-}
-
 .icon {
   height: 32px;
   width: 32px;
+}
+
+.menu-icon {
+  color: var(--color-primary)
 }
 
 header {
@@ -66,7 +115,7 @@ header {
 }
 
 .sun-icon {
-  fill: #121212;
+  fill: var(--color-dark);
   opacity: 1;
   pointer-events: auto;
 }
@@ -76,16 +125,6 @@ header {
   opacity: 0;
   pointer-events: none;
   stroke: #f5f5f5;
-}
-
-.dark-mode .sun-icon {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.dark-mode .moon-icon {
-  opacity: 1;
-  pointer-events: auto;
 }
 
 .menu-active {
@@ -109,13 +148,17 @@ header {
   align-items: center;
   display: flex;
   justify-content: center;
-  background-color: pink;
+  background-color: var(--color-secondary);
   height: 100vh;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: 2;
+}
+
+.menu-toggle.menu-active .menu-icon:hover {
+  color: var(--color-dark);
 }
 
 .menu-toggle.menu-active .top-bar {
@@ -132,6 +175,14 @@ header {
   transform: translateY(-7px) rotate(-45deg);
 }
 
+.menu-icon:hover {
+  color: var(--color-secondary);
+}
+
+.menu-toggle.menu-active .menu-icon {
+  color: var(--color-light);
+}
+
 .navigation-list {
   display: flex;
   flex-direction: column;
@@ -140,8 +191,13 @@ header {
 }
 
 .navigation-list li a {
-  color: #000;
+  color: var(--color-light);
+  font-weight: bold;
   text-decoration: none;
+}
+
+.navigation-list li a:hover {
+  color: var(--color-primary);
 }
 
 #header-intro {
@@ -153,6 +209,7 @@ header {
 }
 
 #header-intro h1 {
+  color: var(--color-primary);
   font-size: 70px;
 }
 
@@ -180,6 +237,7 @@ header {
 }
 
 .fa-angle-down {
+  color: var(--color-primary);
   cursor: pointer;
   font-size: 30px;
 }
@@ -195,6 +253,7 @@ section {
 }
 
 .section-title {
+  color: var(--color-secondary);
   font-size: 30px;
   padding: 25px 0;
   text-align: center;
@@ -220,6 +279,7 @@ section {
 }
 
 .section-subtitle {
+  color:var(--color-text);
   font-size: 20px;
   grid-column: 1 / -1;
   padding: 10px 0;
@@ -249,7 +309,7 @@ section {
 
 .project-details-container {
   background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
+  color: var(--color-light);
   display: none;
   height: 100%;
   left: 0;
@@ -274,7 +334,7 @@ section {
 }
 
 .project-tools {
-  color: #000;
+  color: var(--color-text);
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -283,7 +343,8 @@ section {
 }
 
 .project-tools li {
-  background-color: #fff;
+  background-color: var(--color-light);
+  color: var(--color-dark);
   border-radius: 5px;
   padding: 3px;
 }
@@ -295,15 +356,20 @@ section {
 }
 
 .project-links a {
-  border: 1px solid #fff;
-  color: #fff;
+  background-color: var(--color-primary);
+  border-radius: 5px;
+  color: var(--color-light);
   padding: 8px 10px;
   text-decoration: none;
 }
 
+.project-links a:hover {
+  background-color: var(--color-secondary);
+}
+
 footer {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--color-primary);
+  color: var(--color-light);
   padding: 20px;
   text-align: center;
 }
