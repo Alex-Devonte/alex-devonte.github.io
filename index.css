@@ -146,9 +146,9 @@ header {
 
 #menu.menu-open {
   align-items: center;
+  background-color: var(--color-secondary);
   display: flex;
   justify-content: center;
-  background-color: var(--color-secondary);
   height: 100vh;
   position: fixed;
   left: 0;
@@ -194,6 +194,7 @@ header {
   color: var(--color-light);
   font-weight: bold;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .navigation-list li a:hover {
@@ -236,10 +237,25 @@ header {
   right: 0;
 }
 
+@keyframes bob {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
+
 .fa-angle-down {
+  animation: bob 1s infinite;
   color: var(--color-primary);
   cursor: pointer;
   font-size: 30px;
+  transition: all 0.2s ease;
+}
+
+.fa-angle-down:hover {
+  color: var(--color-secondary);
 }
 
 main {
@@ -361,6 +377,7 @@ section {
   color: var(--color-light);
   padding: 8px 10px;
   text-decoration: none;
+  transition: all 0.1s ease;
 }
 
 .project-links a:hover {
