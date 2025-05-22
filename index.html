@@ -3,6 +3,7 @@
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800"
       rel="stylesheet"
@@ -74,7 +75,9 @@
       </div>
     </header>
     <main>
-      <section id="tools">
+      <section id="tools" data-aos="fade-left"
+     data-aos-anchor-placement="top-center"
+     >
         <h2 class="section-title">Tools</h2>
         <div class="tools-container">
           <div class="tool">
@@ -152,7 +155,8 @@
         </div>
       </section>
 
-      <section id="projects">
+      <section id="projects"  data-aos="fade-right"
+     data-aos-anchor-placement="top-center">
         <h2 class="section-title">Projects</h2>
         <!--Fullstack projects-->
         <div id="fullstack-projects">
@@ -293,5 +297,6 @@
 
     <footer>Designed and developed by Alex Taylor</footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
