@@ -225,7 +225,13 @@ header {
 
 .social-icon {
   height: 40px;
+  opacity: 0.5;
+  transition: all 0.2s ease;
   width: 40px;
+}
+
+.social-icon:hover {
+  opacity: 1;
 }
 
 .angle-down-container {
