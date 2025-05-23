@@ -275,7 +275,7 @@ section {
 }
 
 .section-title {
-  color: var(--color-secondary);
+  color: var(--color-primary);
   font-size: 30px;
   padding: 25px 0;
   text-align: center;
@@ -392,7 +392,9 @@ section {
 
 footer {
   background-color: var(--color-primary);
-  color: var(--color-light);
+  color: var(--color-dark);
+  font-size: 18px;
+  font-weight: bold;
   padding: 20px;
   text-align: center;
 }
